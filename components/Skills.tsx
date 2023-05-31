@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <div className="skills-container">
-      <h2>Skills</h2>
+      <h2>Tech stack</h2>
       <div className="grid-skills">
         <div className="skill-card html">
           <i className="fa-brands fa-html5 html-icon"></i>
@@ -9,7 +9,7 @@ const Skills = () => {
         </div>
         <div className="skill-card css">
           <i className="fa-brands fa-css3-alt css-icon"></i>
-          <p>CSS</p>
+          <p>CSS/Sass</p>
         </div>
         <div className="skill-card js">
           <i className="fa-brands fa-js-square js-icon"></i>
@@ -20,12 +20,12 @@ const Skills = () => {
           <p>React</p>
         </div>
         <div className="skill-card node">
-          <i className="fa-brands fa-node-js node-icon"></i>
+          <i className="fa-brands fa-brands fa-node"></i>
           <p>Node</p>
         </div>
         <div className="skill-card python">
-          <i className="fa-brands fa-python python-icon"></i>
-          <p>Python</p>
+          <i className="fa-brands fa-brands fa-github"></i>
+          <p>Git</p>
         </div>
       </div>
     </div>

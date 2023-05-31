@@ -3,7 +3,7 @@ const Footer = () => {
     <>
       <hr />
       <div className="footer-container">
-        <p>&copy; {new Date().getFullYear()} Yasmin's Portfolio</p>
+        <p>&copy; {new Date().getFullYear()} Yasmins Portfolio</p>
         <div className="social_icons">
           {/* <a
                       href="https://twitter.com/olawanle_joel"

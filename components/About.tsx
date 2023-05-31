@@ -1,5 +1,7 @@
 import Image from "next/image";
-import styles from "./About.module.css";
+// import image from "../assets/images/";
+
+import styles from "./About.module.scss";
 
 const About = () => {
   return (
@@ -27,6 +29,7 @@ const About = () => {
           <Image
             src="/images/about.jpeg"
             className="profile-img"
+            alt="Yasmin"
             width={300}
             height={500}
           />
