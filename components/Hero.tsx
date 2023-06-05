@@ -10,7 +10,7 @@ const Hero = () => {
         className="profile-img"
         width={300}
         height={300}
-        alt="Yasmin's personal headshot"
+        alt="Yasmins personal headshot"
       />
       <div className="hero-text">
         <h1>Front-end Developer 👋</h1>
