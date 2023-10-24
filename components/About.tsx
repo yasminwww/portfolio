@@ -1,11 +1,9 @@
 import Image from "next/image";
-// import image from "../assets/images/";
-
-import styles from "./About.module.scss";
+import image from "../assets/images/about.jpg";
 
 const About = () => {
   return (
-    <div className={styles.About}>
+    <div className="about-container">
       <h2>About Me</h2>
       <div className="flex-about">
         <div className="about-text">
@@ -15,23 +13,23 @@ const About = () => {
             foundation in software development, with a focus on web technologies
             such as HTML, CSS, and JavaScript.
           </p>
+          <span className="about-text-icon">
+            <i className="fa-solid fa-terminal" />
+          </span>
           <p>
-            Throughout my career, I have worked on a wide range of projects,
-            from simple static websites to complex enterprise-level
-            applications. I am experienced in working with a variety of
-            development tools and frameworks, including React, Angular, Vue.js,
-            Node.js, and Laravel. I am always eager to learn and explore new
-            technologies, and I am constantly seeking out opportunities to
-            improve my skills and knowledge.
+            Throughout my career, I have handled a wide range of projects, from
+            simple static websites to complex enterprise-level applications.
+            With expertise in React, Git, Node, and Express, I eagerly explore
+            new technologies and continuously strive for growth.
           </p>
         </div>
         <div className="about-img">
           <Image
-            src="/images/about.jpeg"
+            src={image}
             className="profile-img"
             alt="Yasmin"
-            width={300}
-            height={500}
+            // width={200}
+            // height={300}
           />
         </div>
       </div>
