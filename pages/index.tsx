@@ -20,8 +20,18 @@ export default function Home() {
       </Head>
       <div>
         <Hero />
-        <About />
-        <Skills />
+        <div
+          style={{
+            height: "100vh",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <About />
+          <Skills />
+        </div>
         <Projects />
         <Contact />
       </div>
