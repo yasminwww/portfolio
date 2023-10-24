@@ -40,7 +40,7 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Front-end Developer 👋</h1>
         <p>
-          Im a software developer based in Stockholm, Sweden, specializing in
+          I am a software developer based in Stockholm, Sweden, specializing in
           creating exceptional websites and applications for businesses.
         </p>
         <div className="social-icons">
