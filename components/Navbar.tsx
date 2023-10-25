@@ -1,6 +1,42 @@
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [, setScrollPosition] = useState(0);
+
+  const scrollToSection = (sectionId: string, offset: number) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      // Calculate the scroll position with the offset
+      const offsetPosition = element.offsetTop - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  useEffect(() => {
+    // Add a scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <nav className="nav-container">
       <div className="logo">
@@ -13,10 +49,27 @@ const Navbar = () => {
         Resume
       </a> */}
 
-      <Link href="/">Home</Link>
-      <Link href="#about">About</Link>
-      <Link href="#projects">Projects</Link>
-      <Link href="#contact">Contact</Link>
+      <Link href="/" onClick={goToTop}>
+        Home
+      </Link>
+      <Link
+        href="#about"
+        onClick={() => scrollToSection("about-container", 250)}
+      >
+        About
+      </Link>
+      <Link
+        href="#projects"
+        onClick={() => scrollToSection("projects-container", 250)}
+      >
+        Projects
+      </Link>
+      <Link
+        href="#contact"
+        onClick={() => scrollToSection("contact-container", 0)}
+      >
+        Contact
+      </Link>
     </nav>
   );
 };

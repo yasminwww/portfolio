@@ -3,7 +3,7 @@ import image from "../assets/images/about.jpg";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about-container">
       <h2>About Me</h2>
       <div className="flex-about">
         <div className="about-text">

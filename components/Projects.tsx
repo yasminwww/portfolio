@@ -2,7 +2,7 @@ import { projectData } from "./data";
 
 const Projects = () => {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects-container">
       <h2>Projects</h2>
       <div className="projects-grid">
         {projectData &&

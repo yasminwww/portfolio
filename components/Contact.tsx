@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact-container">
       <h2>Get In Touch</h2>
       <p>
         If you want us to work together, have any questions or want me to speak
