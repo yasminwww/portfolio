@@ -28,10 +28,8 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // Add a scroll event listener when the component mounts
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -39,37 +37,37 @@ const Navbar = () => {
 
   return (
     <nav className="nav-container">
-      <div className="logo">
-        <Link href="/">Yasmins Portfolio</Link>
-      </div>
+      <div className="logo"></div>
+      <Link href="/">Yasmins Portfolio</Link>
       {/* <a
         href="https://docs.google.com/document/d/10ZosQ38Z3804KYPcb_aZp9bceoXK-q3GrkHjYshqIRE/edit?usp=sharing"
         className="cta-btn"
       >
         Resume
       </a> */}
-
-      <Link href="/" onClick={goToTop}>
-        Home
-      </Link>
-      <Link
-        href="#about"
-        onClick={() => scrollToSection("about-container", 250)}
-      >
-        About
-      </Link>
-      <Link
-        href="#projects"
-        onClick={() => scrollToSection("projects-container", 250)}
-      >
-        Projects
-      </Link>
-      <Link
-        href="#contact"
-        onClick={() => scrollToSection("contact-container", 0)}
-      >
-        Contact
-      </Link>
+      <div className="nav-links">
+        <Link href="/" onClick={goToTop}>
+          Home
+        </Link>
+        <Link
+          href="#about"
+          onClick={() => scrollToSection("about-container", 250)}
+        >
+          About
+        </Link>
+        <Link
+          href="#projects"
+          onClick={() => scrollToSection("projects-container", 250)}
+        >
+          Projects
+        </Link>
+        <Link
+          href="#contact"
+          onClick={() => scrollToSection("contact-container", 0)}
+        >
+          Contact
+        </Link>
+      </div>
     </nav>
   );
 };
