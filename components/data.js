@@ -1,17 +1,17 @@
 export const projectData = [
   {
     id: 1,
-    title: "Todo List App",
+    title: "Job Finding Project",
     description:
-      "A simple Todo List App built with JavaScript. All datas are stored in localstorage. It helps users check list out their plans and tick as they do them.",
-    gitHubLink: "https://github.com/olawanlejoel/Todo-List-App",
+      "A simple Job Finding Project built with React JS and TypeScript. It helps job seekers find jobs and also helps employers find the right candidates for their job openings.",
+    gitHubLink: "https://github.com/yasminwww/job-finding-project",
   },
   {
     id: 2,
-    title: "Books Library App",
+    title: "Image Gallery Project",
     description:
-      "A simple Book Library App built with JavaScript. It helps readers have a good list of books they are either currently reading or have finished reading.",
-    gitHubLink: "https://github.com/olawanlejoel/Book-Library",
+      "An Image Gallery Project built with React JS and TypeScript. It helps users to view images in a gallery format.",
+    gitHubLink: "https://github.com/yasminwww/image-gallery-project",
   },
   // {
   //   id: 3,
